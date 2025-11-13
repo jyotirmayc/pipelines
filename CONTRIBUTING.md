@@ -7,7 +7,7 @@ just a few small guidelines you need to follow.
 
 Kubeflow uses Developer Certificate of Origin ([DCO](https://github.com/apps/dco/)).
 
-Please see https://github.com/kubeflow/community/tree/master/dco-signoff-hook#signing-off-commits to learn how to sign off your commits.
+Please see <https://github.com/kubeflow/community/tree/master/dco-signoff-hook#signing-off-commits> to learn how to sign off your commits.
 
 ## Contribution Guidelines
 
@@ -49,7 +49,7 @@ design documentation, explaining why you want to make a change, what changes are
 you proposing, and how do you plan to implement it. The design review process
 would be required by default unless the team agreed that the change is too
 trivial. It is recommended that you use this [Google doc template](https://docs.google.com/document/d/1VrfuMo8ZeMmV75a-rUq9SO-E6KotBodAf-P0WZeFDZA/edit?usp=sharing&resourcekey=0-BklOgu8ivhdLCplZuPDZZg) (You need to join [kubeflow-discuss](https://groups.google.com/g/kubeflow-discuss) google group to get access)
-for your design, and share it with kubeflow-discuss@googlegroups.com for
+for your design, and share it with <kubeflow-discuss@googlegroups.com> for
 commenting. After sharing the design documentation, you could optionally join a
 session of the bi-weekly Kubeflow Pipelines community meetings
 [[agenda](http://bit.ly/kfp-meeting-notes)] to present or further discuss your
@@ -74,6 +74,7 @@ Kubeflow Pipelines consists of multiple components. Before you begin, learn how 
 ## Coding style
 
 ### SDK
+
 See the [SDK-specific Contribution Guidelines](sdk/CONTRIBUTING.md) for contributing to the `kfp` SDK.
 
 ### Frontend
@@ -81,7 +82,8 @@ See the [SDK-specific Contribution Guidelines](sdk/CONTRIBUTING.md) for contribu
 The frontend part of the project uses [prettier](https://prettier.io/) for formatting, read [frontend/README.md#code-style](frontend/README.md#code-style) for more details.
 
 ### Backend
-Use [gofmt](https://pkg.go.dev/cmd/gofmt) package to format your .go source files. Read [backend/README.md#code-style](backend/README.md#code-style) for more details. 
+
+Use [gofmt](https://pkg.go.dev/cmd/gofmt) package to format your .go source files. Read [backend/README.md#code-style](backend/README.md#code-style) for more details.
 
 ## Unit Testing Best Practices
 
@@ -91,10 +93,10 @@ Use [gofmt](https://pkg.go.dev/cmd/gofmt) package to format your .go source file
 
 * Put your tests in a different package: Moving your test code out of the package allows you to write tests as though you were a real user of the package. You cannot fiddle around with the internals,
   instead you focus on the exposed interface and are always thinking about any noise that you might be adding to your API. Usually the test code will be put under the same folder
-  but with a package suffix of `_test`. https://golang.org/src/go/ast/example_test.go (example)
+  but with a package suffix of `_test`. <https://golang.org/src/go/ast/example_test.go> (example)
 * Internal tests go in a different file: If you do need to unit test some internals, create another file with `_internal_test.go`
   as the suffix.
-* Write table driven tests: https://github.com/golang/go/wiki/TableDrivenTests (example)
+* Write table driven tests: <https://github.com/golang/go/wiki/TableDrivenTests> (example)
 
 ## Code reviews
 
@@ -127,7 +129,7 @@ The following sections describe the details of the PR title convention.
 
 PR titles should use the following structure.
 
-```
+```text
 <type>[optional scope]: <description>[ Fixes #<issue-number>]
 ```
 
@@ -185,7 +187,7 @@ omit the scope because it's optional, or propose an additional scope here.
 
 When a change requires a significant change to the underlying system, it should be preceded with an Kubernetes Enhancement Proposal (KEP).
 
-KEPs are found in the `proposals` folder at the root of this repo. Read more about the process [here](proposals/README.md).
+KEPs are found in the `proposals` folder at the root of this repo. Read more about the process in the [proposals README](proposals/README.md).
 
 ## Community Guidelines
 
